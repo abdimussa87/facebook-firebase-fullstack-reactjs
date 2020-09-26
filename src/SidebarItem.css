@@ -1,11 +1,12 @@
 .sidebarItem{
     display: flex;
     align-items: center;
-    padding:10px 20px;
+    padding:10px 10px;
+    margin-left: 10px;
     cursor: pointer;
    
 }
-.sidebarItem :hover{
+.sidebarItem:hover{
     background-color: lightgray;
     border-radius: 10px;
 }

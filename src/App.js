@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import FacebookEmbed from './FacebookEmbed';
 import Feed from './Feed';
 import Header from './Header';
 import Sidebar from './Sidebar';
@@ -11,6 +12,8 @@ function App() {
       <div className="app__body">
         <Sidebar/>
         <Feed/>
+        <FacebookEmbed/>
+        
       </div>
     </div>
   );

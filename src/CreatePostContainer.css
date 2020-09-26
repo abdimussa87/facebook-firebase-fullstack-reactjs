@@ -1,0 +1,57 @@
+.createPostContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 30px;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 5px 10px -7px rgba(0, 0, 0, 0.75);
+}
+.createPostContainer__header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid lightgray;
+}
+.createPostContainer__header > form > input {
+  border: none;
+  outline-width: 0;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #eff2f5;
+  border-radius: 999px;
+}
+.createPostContainer__header > form > button {
+  display: none;
+}
+.createPostContainer__header > form {
+  display: flex;
+  flex: 1;
+}
+.createPostContainer__input {
+  flex: 1;
+}
+
+.createPostContainer__footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.createPostContainer__option {
+  display: flex;
+  padding: 10px;
+  margin: 5px;
+  align-items: center;
+  color: gray;
+  cursor: pointer;
+  flex: 1;
+  justify-content: center;
+}
+.createPostContainer__option > h3 {
+  font-weight: 600;
+  margin-left: 5px;
+}
+.createPostContainer__option:hover {
+  background-color:#eff2f5;
+  border-radius: 15px;
+}

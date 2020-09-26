@@ -6,7 +6,6 @@ function SidebarItem({src,Icon,title}) {
         <div className='sidebarItem'>
             {src && <Avatar src={src}/>}
             {Icon && <Icon/>}
-
             <h4>{title}</h4>
         </div>
     )
