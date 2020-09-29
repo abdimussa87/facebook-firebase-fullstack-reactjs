@@ -39,6 +39,7 @@
 .header__middle{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .header__option{
     padding: 0 30px;
@@ -48,10 +49,10 @@
     color: gray; 
 }
 .header__option:hover{
-    padding: 0 30px;
+    /* padding: 0 30px; */
     background-color: #eff2f5;
     border-radius: 10px;
-    /* align-items: center; */
+    align-items: center;
     border-bottom: none;
 }
 .header__option:hover > .MuiSvgIcon-root{
