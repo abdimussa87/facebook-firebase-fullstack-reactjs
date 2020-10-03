@@ -9,10 +9,12 @@ import ChatIcon from '@material-ui/icons/Chat';
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
+import { useStateValue } from './StateProvider';
 function Sidebar() {
+  const [{user},_] = useStateValue();
     return (
         <div className='sidebar'>
-          <SidebarItem src='https://cdn.iconscout.com/icon/free/png-256/laptop-user-1-1179329.png'  title='Abdi Mussa'/>
+          <SidebarItem src={user.photoURL}  title={user.displayName}/>
           <SidebarItem Icon={LocalHospitalIcon} title='COVID-19 Information Center'/>
           <SidebarItem Icon={FlagIcon} title='Pages'/>
           <SidebarItem Icon={GroupIcon} title='Friends'/>
