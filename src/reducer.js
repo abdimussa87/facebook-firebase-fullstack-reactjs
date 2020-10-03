@@ -4,6 +4,7 @@ export const initialState={
 
 export const actionTypes ={
     SET_USER:'SET_USER',
+    REMOVE_USER:'REMOVE_USER'
 };
 
 const reducer = (state,action)=>{
@@ -13,6 +14,11 @@ const reducer = (state,action)=>{
                 ...state,
                 user:action.user,
             };
+        case actionTypes.REMOVE_USER:
+            return{
+                ...state,
+                user:action.user
+            }
         default:
             return state;
     }

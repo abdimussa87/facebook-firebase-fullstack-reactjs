@@ -17,7 +17,7 @@ function CreatePostContainer() {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Db setup
-        if (!message.trim().length === 0) {
+        if (message.trim().length !== 0) {
             db.collection('posts').add({
                 username: user.displayName,
                 profilePic: user.photoURL,
